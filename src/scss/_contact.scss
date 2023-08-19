@@ -1,0 +1,33 @@
+$muli-font: 'Mulish', sans-serif;
+$link-color: #8d8d8d;
+
+.contacts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1em;
+}
+.contact{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contact:first-child{
+    background-image: url('../../public/static/github-icon.png');
+}
+.contact:nth-child(2){
+    background-image: url('../../public/static/resume-icon.png')
+}
+.contact:nth-child(3){
+    background-image: url('../../public/static/vk-icon.png');
+}
+.contact:last-child{
+    background-image: url('../../public/static/email-icon.png');
+}
+.contact__link{
+    color: $link-color;
+    font-family: $muli-font;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 30px;
+}

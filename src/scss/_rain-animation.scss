@@ -1,0 +1,16 @@
+.rain {
+    position: fixed;
+    width: 1px; /* Ширина капли */
+    height: 3px; /* Высота капли */
+    top: -3px;
+    background-color: #fff; /* Цвет капли */
+    animation: rain 1.2s linear infinite;
+    z-index: 99;
+    border-radius: 1px;
+}
+
+@keyframes rain {
+    to {
+        transform: translate3d(200px, 1000px, 0); /* Первое значение (200px) это направление дождя, где: 0 - вниз, положительное число - вправо, отрицательное - влево */
+    }
+}

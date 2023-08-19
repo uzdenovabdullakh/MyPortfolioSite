@@ -1,0 +1,29 @@
+$open-sans-font: 'Open Sans', sans-serif;
+
+.about-me-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2rem;
+    /*
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    */
+}
+.about-me-container__photo{
+    img{
+        clip-path: circle(50%)
+    }
+}
+.about-me-container__text{
+    p{
+        font-family: $open-sans-font;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 2vmin;
+        line-height: 1.5;
+        text-indent: 2em;
+    }
+}

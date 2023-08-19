@@ -1,0 +1,32 @@
+@import "reset";
+@import 'header';
+@import "about-me";
+@import "contact";
+@import "my-works.scss";
+@import "media-queries";
+//анимация не мое
+@import "_snow-animation";
+@import "_rain-animation";
+
+$bg-color: #0e294b;
+$text-color: #ffffff;
+$muli-font: "Mulish", sans-serif;
+$open-sans-font: "Open Sans", sans-serif;
+$montserrat-font: "Montserrat", sans-serif;
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+#root {
+  background-color: $bg-color;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 7rem 15px 4rem;
+  max-width: 800px;
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}

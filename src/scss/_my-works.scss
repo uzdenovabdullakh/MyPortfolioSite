@@ -1,0 +1,34 @@
+$montserrat-font: "Montserrat", sans-serif;
+$link-color: #8d8d8d;
+
+.my-work-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    /*
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    align-items: center;
+    */
+}
+.work__image{
+    img{
+        border-radius: 20px;
+        width: 375px;
+    }
+}
+.work__link{
+    a{
+        font-family: $montserrat-font;
+        font-weight: 500;
+        font-style: normal;
+        color: $link-color; 
+    }
+}

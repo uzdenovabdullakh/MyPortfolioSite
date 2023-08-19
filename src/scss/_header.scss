@@ -1,0 +1,43 @@
+$font-color: #ffffff;
+$bg-color: #0f1b34;
+$muli-font: "Mulish", sans-serif;
+
+.header {
+  background-color: $bg-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.navbar {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 800px;
+}
+.navbar-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: flex-end;
+}
+.navbar-menu__item {
+  padding: 1.5em;
+  a {
+    color: $font-color;
+    font-family: $muli-font;
+    font-weight: 700;
+  }
+}
+
+/* "Hide" checkbox -- moves it off screen*/
+#menu-btn {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+}
+/* Hide hamburger for bigger screens */
+.menu-icon {
+  visibility: hidden;
+}
