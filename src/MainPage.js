@@ -34,19 +34,22 @@ function MainPage() {
 
   useEffect(() => {
     const getWheather = async () => {
-      const data = await fetch(
-        "http://api.openweathermap.org/data/2.5/weather?id=483386&lang=ru&appid=ceeac3639f8c3a518a274789af0a5ea0"
+      // const data = await fetch(
+      //   "http://api.openweathermap.org/data/2.5/weather?id=483386&lang=ru&appid=ceeac3639f8c3a518a274789af0a5ea0"
+      // );
+      const resp = await fetch(
+        "http://api.openweathermap.org/data/2.5/weather?id=484907&lang=ru&appid=ceeac3639f8c3a518a274789af0a5ea0"
       );
-      const formattedData = await data.json();
-      if (formattedData.weather[0]["description"] === "дождь") {
+      const data = await resp.json();
+      if (data.weather[0].main === "Rain") {
         setIsRain(true);
       }
-      if (formattedData.weather[0]["description"] === "снег") {
+      if (data.weather[0].main === "Snow") {
         setIsSnow(true);
       }
-      console.log(formattedData.weather[0].main);
+      //formattedData.weather[0]["description"]
     };
-    //getWheather();
+    getWheather();
     if (isRain) {
       rain();
     } else if (isSnow) {
