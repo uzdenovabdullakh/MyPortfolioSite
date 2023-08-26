@@ -37,7 +37,7 @@ function MainPage() {
       const API_KEY = process.env.REACT_APP_API_KEY;
       try {
          const resp = await fetch(
-          `http://api.openweathermap.org/data/2.5/weather?id=484907&lang=ru&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?id=484907&lang=ru&appid=${API_KEY}`
         );
         const data = await resp.json();
         if (data.weather[0].main === "Rain") {
