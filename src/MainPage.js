@@ -34,11 +34,9 @@ function MainPage() {
 
   useEffect(() => {
     const getWheather = async () => {
-      // const data = await fetch(
-      //   "http://api.openweathermap.org/data/2.5/weather?id=483386&lang=ru&appid=ceeac3639f8c3a518a274789af0a5ea0"
-      // );
+      const API_KEY = process.env.REACT_APP_API_KEY;
       const resp = await fetch(
-        "http://api.openweathermap.org/data/2.5/weather?id=484907&lang=ru&appid=ceeac3639f8c3a518a274789af0a5ea0"
+        `http://api.openweathermap.org/data/2.5/weather?id=484907&lang=ru&appid=${API_KEY}`
       );
       const data = await resp.json();
       if (data.weather[0].main === "Rain") {
