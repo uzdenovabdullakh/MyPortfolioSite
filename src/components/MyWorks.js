@@ -36,6 +36,38 @@ function MyWorks() {
             <Link to="https://github.com/uzdenovabdullakh/QwertyConverter" target='blank'>Ссылка на репозиторий в GitHub</Link>
           </div>
         </div>
+        <div className="work">
+          <div className="work__image">
+            <img src={window.location.origin + '/static/todo-site.png'} alt="" />
+          </div>
+          <div className="work__link">
+            <Link to="https://github.com/uzdenovabdullakh/Todo-App" target='blank'>Ссылка на репозиторий в GitHub</Link>
+          </div>
+        </div>
+       <div className="work">
+          <div className="work__image">
+            <img src={window.location.origin + '/static/tic-tac-toe.png'} alt="" />
+          </div>
+          <div className="work__link">
+            <Link to="https://github.com/uzdenovabdullakh/Tic-Tac-Toe" target='blank'>Ссылка на репозиторий в GitHub</Link>
+          </div>
+      </div>
+      <div className="work">
+          <div className="work__image">
+            <img src={window.location.origin + '/static/calculator.png'} alt="" />
+          </div>
+          <div className="work__link">
+            <Link to="https://github.com/uzdenovabdullakh/Calculator-Javascript" target='blank'>Ссылка на репозиторий в GitHub</Link>
+          </div>
+      </div>
+      <div className="work">
+          <div className="work__image">
+            <img src={window.location.origin + '/static/paswword-generator.png'} alt="" />
+          </div>
+          <div className="work__link">
+            <Link to="https://github.com/uzdenovabdullakh/password-generator" target='blank'>Ссылка на репозиторий в GitHub</Link>
+          </div>
+      </div>
     </div>
   );
 }
