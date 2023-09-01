@@ -68,6 +68,22 @@ function MyWorks() {
             <Link to="https://github.com/uzdenovabdullakh/password-generator" target='blank'>Ссылка на репозиторий в GitHub</Link>
           </div>
       </div>
+      <div className="work">
+          <div className="work__image">
+            <img src={window.location.origin + '/static/myportfolio.png'} alt="" />
+          </div>
+          <div className="work__link">
+            <Link to="https://github.com/uzdenovabdullakh/MyPortfolioSite" target='blank'>Ссылка на репозиторий в GitHub</Link>
+          </div>
+      </div>
+      <div className="work">
+          <div className="work__image">
+            <img src={window.location.origin + '/static/hacker-news.png'} alt="" />
+          </div>
+          <div className="work__link">
+            <Link to="https://github.com/uzdenovabdullakh/Hacker-News" target='blank'>Ссылка на репозиторий в GitHub</Link>
+          </div>
+      </div>
     </div>
   );
 }
