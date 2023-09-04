@@ -5,7 +5,7 @@ function Contacts() {
   return (
     <div className="contacts-container" id="contacts">
        <div className="contact">
-          <Link className='contact__link' to="https://github.com/uzdenovabdullakh?tab=repositories" target='blank'>Мой GutHub</Link>
+          <Link className='contact__link' to="https://github.com/uzdenovabdullakh?tab=repositories" target='blank'>Мой GitHub</Link>
        </div>
        <div className="contact">
          <Link className='contact__link' to={window.location.origin+ '/static/Узденов Абдуллах Хасанович.pdf'} target='blank'>Мое резюме</Link>
